@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= htmlWebpackPlugin.options.page %></title>
+</head>
+<body>
+<%= require('html-loader!./common/header.html').default %>
+<main class="main <%= page %>">
+  <p>main</p>
+</main>
+<%= require('html-loader!./common/footer.html').default %>
+</body>
+</html>
